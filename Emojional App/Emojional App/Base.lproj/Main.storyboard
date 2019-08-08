@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +13,55 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Emojional_App" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TRAVELMOJI✈️" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Deu-uJ-H7T">
+                                <rect key="frame" x="60" y="458" width="294" height="34"/>
+                                <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="34"/>
+                                <color key="textColor" red="0.99215686270000003" green="0.56470588239999997" blue="0.85490196080000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IDA-6M-q46">
+                                <rect key="frame" x="100" y="138" width="214" height="149"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="114"/>
+                                <state key="normal" title="🏠"/>
+                                <connections>
+                                    <action selector="showMessage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YWS-Mm-E4Y"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fbE-Eh-eYH">
+                                <rect key="frame" x="267" y="617" width="116" height="140"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="107"/>
+                                <state key="normal" title="🏝"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nrq-db-eSe">
+                                <rect key="frame" x="34" y="621" width="108" height="132"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="100"/>
+                                <state key="normal" title="🏙"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.98039215686274506" green="0.88235294117647056" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Deu-uJ-H7T" secondAttribute="trailing" constant="60" id="1hQ-fh-v1c"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="fbE-Eh-eYH" secondAttribute="bottom" constant="105" id="4NI-93-5bi"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="fbE-Eh-eYH" secondAttribute="trailing" constant="31" id="Ofo-al-J9L"/>
+                            <constraint firstItem="Deu-uJ-H7T" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="60" id="eAy-1b-5H4"/>
+                            <constraint firstItem="IDA-6M-q46" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="100" id="eKB-KC-Z8U"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="IDA-6M-q46" secondAttribute="trailing" constant="100" id="gCd-JW-04Q"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Nrq-db-eSe" secondAttribute="bottom" constant="109" id="o2f-hI-whV"/>
+                            <constraint firstItem="IDA-6M-q46" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="94" id="q6c-dE-LGt"/>
+                            <constraint firstItem="Nrq-db-eSe" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="34" id="sXS-Ax-tYI"/>
+                            <constraint firstItem="fbE-Eh-eYH" firstAttribute="top" secondItem="Deu-uJ-H7T" secondAttribute="bottom" constant="125" id="vsV-Q1-4h3"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="117.85714285714285"/>
         </scene>
     </scenes>
 </document>
