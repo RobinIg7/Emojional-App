@@ -36,11 +36,17 @@
                                 <rect key="frame" x="267" y="617" width="116" height="140"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="107"/>
                                 <state key="normal" title="🏝"/>
+                                <connections>
+                                    <action selector="showBeachMessage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="n9t-Bl-TdS"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nrq-db-eSe">
                                 <rect key="frame" x="34" y="621" width="108" height="132"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="100"/>
                                 <state key="normal" title="🏙"/>
+                                <connections>
+                                    <action selector="showCityMessage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3X4-6J-hPp"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.98039215686274506" green="0.88235294117647056" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
